@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Premier Leagure - Standings, Match Schedule & Information Team</title>
+  <!-- Meta Tag-->
+  <meta name="description" content="Premier Leagure - Standings, Match Schedule & Information Team" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- icon -->
+  <link rel="icon" type="image/png" href="images/icon/icon-192x192.png" sizes="192x192" />
+  <link rel="icon" type="image/png" href="images/icon/icon-128x128.png" sizes="128x128" />
+  <link rel="icon" type="image/png" href="images/icon/icon-96x96.png" sizes="96x96" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/my-style.css">
+
+  <style>
+    .text-league {
+      color: #3a125b !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Loader -->
+  <div class="loader-wrap">
+    <div class="loader-content">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigasi -->
+  <nav class="grey lighten-5 text-league" role="navigation">
+    <div class="nav-wrapper container">
+      <a href="./index.html" class="brand-logo" id="logo-container">
+        <img style="margin-top:5px; height: 47px;" src="/images/main-logo.png" alt="main-logo">
+      </a>
+      <a href="#" class="sidenav-trigger text-league" data-target="nav-mobile">&#9776;</a>
+
+      <ul class="topnav right hide-on-med-and-down"></ul>
+      <ul class="sidenav" id="nav-mobile"></ul>
+    </div>
+  </nav>
+  <!-- Akhir Navigasi -->
+
+  <div id="body-content"></div>
+
+  <script src="js/materialize.min.js"></script>
+  <script src="js/idb.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="/register-sw.js"></script>
+  <script>        
+    // REQUEST API UNTUK PERTAMA KALI
+    document.addEventListener("DOMContentLoaded", function () {
+      var page = window.location.hash.substr(1);
+    });
+  </script>
+</body>
+
+</html>

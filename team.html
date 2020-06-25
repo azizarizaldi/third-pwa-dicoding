@@ -91,13 +91,13 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      var urlParams = new URLSearchParams(window.location.search);
-      var id = urlParams.get("id");
+      const urlParams = new URLSearchParams(window.location.search);
+      const id = urlParams.get("id");
 
-      var btnSave = document.getElementById("save");
-      var btnDelete = document.getElementById("delete");
+      const btnSave = document.getElementById("save");
+      const btnDelete = document.getElementById("delete");
 
-      var item = getTeamById();
+      const item = getTeamById();
 
       checkFavorite();
       function checkFavorite() {

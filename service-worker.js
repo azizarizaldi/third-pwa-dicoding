@@ -108,13 +108,13 @@ if (workbox) {
   );
 
   self.addEventListener('push', function (event) {
-    var body;
+    let body;
     if (event.data) {
       body = event.data.text();
     } else {
       body = 'Push message no payload';
     }
-    var options = {
+    let options = {
       body: body,
       icon: 'images/soccer.png',
       vibrate: [100, 50, 100],

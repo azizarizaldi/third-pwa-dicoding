@@ -1,6 +1,6 @@
-var webPush = require('web-push');
+const webPush = require('web-push');
 
-var vapidKeys = {
+const vapidKeys = {
     "publicKey": "BHYuE4NfFYXpVWcllWq2J95vdT4fNEu2Romid7ZeNbFbbAtWag4SanXXnfplja_SQGfy5x6_vZ6n5ur-zS9_740",
     "privateKey": "EgJTeycdqDcTkaXzvlQ2u_SpHyvNens9WLNMFVvmIWw"
 };
@@ -12,7 +12,7 @@ webPush.setVapidDetails(
     vapidKeys.privateKey
 );
 
-var pushSubscription = {
+const pushSubscription = {
     "endpoint": "https://fcm.googleapis.com/fcm/send/eYU7DFXwJQM:APA91bE7ykwJICxSy_MEhS4Q4nl5YJphIxkdX8ZSyC9sfOdhKktWkp5jWZ-sjD0a7CfrjOp3JD0Uj7vWoDIlgJNQrWmDHnJMJHxO1ee9iAPpf0pWFkKGvFekaXFw0BiNj_uBmeyrEJaW",
     "keys": {
         "p256dh": "BMAbeZB8JBG0gE6+COl6GU4Ajs/OAxv9kc4j6shKUpamPNaBiECsuLODkTlTT82XYBNpiBqY58qlTLpLEfmYy48=",
@@ -20,9 +20,9 @@ var pushSubscription = {
     }
 };
 
-var payload = 'Selamat! Aplikasi Anda sudah dapat menerima push notifikasi!';
+const payload = 'Selamat! Aplikasi Anda sudah dapat menerima push notifikasi!';
 
-var options = {
+const options = {
     gcmAPIKey: '610953317991',
     TTL: 60
 };

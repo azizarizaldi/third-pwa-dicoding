@@ -232,3 +232,15 @@ h1, h2, h3, h4, h5, h6 {
 .text-right {
     text-align: right;
 }
+
+.mt-30 {
+    margin-top: 30px !important;    
+}
+
+.text-league {
+    color: #3a125b !important;
+}
+
+.main-logo {
+    margin-top:5px; height: 47px;    
+}

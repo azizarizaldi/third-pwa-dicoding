@@ -156,7 +156,7 @@ function viewSavedFavorite(favorites) {
                 <b id="clubTitleId">${shortName}</b>
                 <br />
                 <br />
-                <img id="clubLogo" class="img-home materialboxed" style="display: inline;" src="${crestUrl}" alt="${name}">
+                <img id="clubLogo" class="img-home" style="display: inline;" src="${crestUrl}" alt="${name}">
             </div>
             <div class="card-content">
                 <p class="card-text">

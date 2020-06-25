@@ -61,6 +61,8 @@ function viewStandings(data = "") {
   const standings = data.standings[0];
 
   $("#lastUpdated").text(competition.lastUpdated.replace('T', ' ').replace('Z', ' '));
+  $("#listStandings").empty();
+  
   $.each(standings.table, function (key, value) {
     const url = value.team.crestUrl.replace(/^http:\/\//i, 'https://');
     $("#listStandings").append(`

@@ -1,0 +1,19 @@
+{
+  "name": "cls",
+  "version": "1.0.0",
+  "description": "Thirt pwa dicoding exercises",
+  "main": "push.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azizarizaldi/third-pwa-dicoding.git"
+  },
+  "author": "Aziz Arif Rizaldi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azizarizaldi/third-pwa-dicoding/issues"
+  },
+  "homepage": "https://github.com/azizarizaldi/third-pwa-dicoding#readme"
+}
